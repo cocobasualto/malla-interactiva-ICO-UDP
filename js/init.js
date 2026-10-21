@@ -17,7 +17,7 @@
 });*/
 
 (function () { // comment out this if needed
-  const allowedHosts = ['localhost', 'booterman98.github.io']; 
+  const allowedHosts = ['localhost', 'booterman98.github.io', 'cocobasualto.github.io']; 
   const currentHost = window.location.hostname;
 
   if (!allowedHosts.includes(currentHost)) {
