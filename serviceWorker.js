@@ -1,5 +1,5 @@
-const PRECACHE = 'precache-v3';
-const RUNTIME = 'runtime';
+const PRECACHE = 'precache-v4';
+const RUNTIME = 'runtime-v2';
 
 // Habilita el cache de todo para permitir funcionamiento online
 // A list of local resources we always want to be cached.
