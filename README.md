@@ -1,25 +1,109 @@
-# Malla interactiva
+# Malla interactiva — Ingeniería Comercial UDP
 
+Esta es una adaptación del proyecto de [Malla Interactiva de César Paulangelo (@BooterMan98)](https://github.com/BooterMan98/malla-interactiva), que a su vez reconoce la malla original de [Sebastián Aedo (@etra0)](https://github.com/etra0/ramos). Esta versión contiene las menciones de **Administración** y **Economía** de Ingeniería Comercial de la Universidad Diego Portales.
 
-![Contribuidores](https://img.shields.io/github/contributors/csarman/malla-interactiva)
-![package version](https://img.shields.io/github/package-json/v/csarman/malla-interactiva)
-![license](https://img.shields.io/github/license/csarman/malla-interactiva)
-![Docker build status](https://img.shields.io/github/workflow/status/csarman/malla-interactiva/Docker%20Build?label=docker%20build%20)
-![Docker image size](https://img.shields.io/docker/image-size/booterman/malla-interactiva?label=docker%20image%20size)
-![Docker pull count](https://img.shields.io/docker/pulls/booterman/malla-interactiva)
+![Último commit](https://img.shields.io/github/last-commit/cocobasualto/malla-interactiva-ICO-UDP)
+![Licencia](https://img.shields.io/github/license/cocobasualto/malla-interactiva-ICO-UDP)
 
+## Empezar aquí
 
-Proyecto Universitario open-source en donde se mantiene una plataforma web que facilita información sobre las mallas en la Universidad.
-Alojado en [mallas.labcomp.cl](https://mallas.labcomp.cl/) (actualmente no se actualiza, usar [booterman98.github.io/malla-interactiva](https://booterman98.github.io/malla-interactiva) mientras)
+### 1. Abrir una malla
 
+No necesitas instalar nada para usar la versión publicada:
 
-# Índice
-2. [Caracteristicas de la malla](#Características-de-la-malla)
-3. [TODO](#TODO)
-4. [¿Cómo funciona la malla?](#¿Cómo-funciona-la-malla?)
-4. [Agregar o cambiar una malla](#Agregar-o-cambiar-una-malla)
-5. [Probar malla](#Probar-malla)
-6. [Agradecimientos](#Agradecimientos)
+- **[Ingeniería Comercial — Mención Administración](https://cocobasualto.github.io/malla-interactiva-ICO-UDP/?m=administracion)**
+- **[Ingeniería Comercial — Mención Economía](https://cocobasualto.github.io/malla-interactiva-ICO-UDP/?m=economia)**
+
+También puedes cambiar de mención desde el menú **Carreras** de la página.
+
+### 2. Usar las funciones principales
+
+1. Haz clic en un ramo para marcarlo como aprobado; vuelve a hacer clic para cambiar su estado.
+2. Al marcar los ramos aprobados, la malla refleja el avance y permite identificar cuáles asignaturas se liberan según sus prerrequisitos.
+3. Revisa los créditos y porcentajes de avance que aparecen bajo la malla. Usa **Limpiar ramos aprobados** para reiniciar el progreso.
+4. Consulta la leyenda de colores para identificar las categorías de ramos.
+5. Entra a la **[Calculadora de prioridad](https://cocobasualto.github.io/malla-interactiva-ICO-UDP/prioridad/?m=administracion)** o a la **[Generadora de mallas](https://cocobasualto.github.io/malla-interactiva-ICO-UDP/personalizar/?m=administracion)** desde el menú superior. Estas herramientas también pueden abrirse para la mención de Economía cambiando el parámetro de carrera a administracion o economia.
+
+El progreso guardado en el navegador se conserva en ese navegador y dispositivo. No se sincroniza automáticamente con otros dispositivos. Si borras los datos del sitio o cambias de navegador, podrías perder ese progreso.
+
+### 3. Ejecutar el proyecto en tu computador
+
+**Requisitos:** Git y Python 3. Con esto puedes probar la página sin compilar el JavaScript.
+
+1. Clona el repositorio y entra a la carpeta:
+
+        git clone https://github.com/cocobasualto/malla-interactiva-ICO-UDP.git
+        cd malla-interactiva-ICO-UDP
+
+2. Inicia un servidor local desde la carpeta raíz:
+
+        python -m http.server 8000
+
+3. Abre una de estas direcciones:
+
+   - http://localhost:8000/index.html?m=administracion
+   - http://localhost:8000/index.html?m=economia
+
+Deja abierta la terminal mientras pruebas la página. Para detener el servidor, vuelve a la terminal y presiona **Ctrl + C**. No abras solamente el archivo HTML con doble clic: el proyecto necesita un servidor HTTP para cargar los JSON y las vistas correctamente.
+
+**Si vas a modificar archivos JavaScript**, instala las dependencias y regenera los bundles antes de probar:
+
+    npm install
+    npm run devBuild
+    npm start
+
+Estos comandos deben ejecutarse en la carpeta raíz. **npm start** inicia BrowserSync para servir la página y observar cambios. En Windows, usa una terminal compatible con los scripts Bash del proyecto, como Git Bash. Si solo editas JSON, no necesitas regenerar el JavaScript.
+
+### 4. Editar las menciones y los ramos
+
+Los archivos curriculares están en la carpeta **data/**:
+
+| Archivo | Para qué sirve |
+|---|---|
+| **data/carreras.json** | Define los nombres e identificadores de las menciones que aparecen en el menú. |
+| **data/data_administracion.json** | Contiene los ramos por semestre de Administración. |
+| **data/colors_administracion.json** | Define los colores y nombres de categorías de Administración. |
+| **data/data_economia.json** | Contiene los ramos por semestre de Economía. |
+| **data/colors_economia.json** | Define los colores y nombres de categorías de Economía. |
+
+**Para agregar o renombrar una mención**, mantén sincronizado el campo **Link** de **data/carreras.json** con los nombres de los archivos. Por ejemplo, si el identificador es **administracion**, el motor busca **data/data_administracion.json** y **data/colors_administracion.json**. Respeta exactamente las mayúsculas y minúsculas.
+
+Cada ramo debe seguir el formato de siete campos que utiliza el motor de la malla:
+
+    [
+      "Nombre del ramo",
+      "SIGLA-101",
+      6,
+      6,
+      "MET",
+      ["SIGLA-100"],
+      "A"
+    ]
+
+Los campos son: nombre, sigla única, créditos del primer campo, créditos del segundo campo, categoría, lista de siglas de prerrequisitos e indicador de semestre (**P**, **I** o **A**). Coloca cada ramo dentro del semestre correspondiente, por ejemplo **s1**, **s2**, etc. Las categorías usadas en el quinto campo deben existir en el archivo de colores, con un formato como **"MET": ["#FF3333", "Métodos Cuantitativos"]**.
+
+Antes de publicar cambios curriculares, revisa que cada sigla sea única, que los prerrequisitos existan y correspondan a semestres anteriores, que todas las categorías tengan color y que los créditos coincidan con el plan oficial de la UDP. El motor proviene de un proyecto originalmente desarrollado para otra universidad y conserva algunos nombres de campos y textos relacionados con créditos; verifica esos rótulos antes de presentar la aplicación como una fuente oficial de créditos UDP.
+
+### 5. Publicar los cambios
+
+1. Prueba localmente la malla después de editar los datos.
+2. Guarda los cambios en Git y súbelos a la rama que publica el sitio. Por ejemplo:
+
+        git add .
+        git commit -m "Describe tus cambios"
+        git push origin master
+
+3. GitHub Pages debe estar configurado para publicar desde la rama y carpeta correctas del repositorio. Una vez que termine la publicación, actualiza la página con una recarga forzada (**Ctrl + Shift + R**) si sigues viendo una versión antigua.
+
+No elimines **js/min1.js**, **js/min2.js**, **js/min3.js** ni **js/min4.js**: las distintas páginas utilizan esos archivos para cargar sus funciones. Si modificas los archivos fuente JavaScript, vuelve a ejecutar **npm run devBuild** y comprueba que el sitio cargue antes de publicar.
+
+## Índice
+
+- [Características de la malla](#características-de-la-malla)
+- [Cómo funciona el formato de datos](#cómo-funciona-la-malla)
+- [Agregar o cambiar una malla](#agregar-o-cambiar-una-malla)
+- [Probar malla](#probar-malla)
+- [Agradecimientos y créditos](#agradecimientos-y-créditos)
 
 # Características de la malla
 - Visualiza los créditos de las asignaturas según el sistema **USM** o **SCT** 
