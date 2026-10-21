@@ -1,0 +1,7 @@
+{
+  "MET": ["#FF3333", "Métodos Cuantitativos"],
+  "ECO": ["#FFFFFF", "Economía"],
+  "ADM": ["#4CAF50", "Administración de Empresas"],
+  "TAL": ["#3366FF", "Talleres"],
+  "ING": ["#FFD700", "Inglés y CFG"]
+}
