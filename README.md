@@ -191,15 +191,26 @@ Si su explorador tiene problemas, abra *Firefox* y copie y pegue la dirección d
 
 
 ---
-# Agradecimientos
+# Agradecimientos y créditos
 
-Se agradece especialmente a:
+## Proyecto original
 
-* [Sebastián Aedo](https://github.com/etra0) como creador original de la malla interactiva. [Malla Original](https://github.com/etra0/ramos)
-* [Pablo Aravena](https://github.com/litneet64) por su ayuda en la integración del proyecto con Labcomp y en el build workflow.
-* [Carlos Ponce](https://github.com/capgadsx) por su ayuda en la integración del proyecto con Labcomp.
+Esta adaptación se basa en el trabajo previo de la comunidad de la malla interactiva:
 
-Al mismo tiempo se agradece a todos quienes hayan realizado un aporte al proyecto
+* **[Sebastián Aedo (@etra0)](https://github.com/etra0)**, creador de la malla interactiva original: [repositorio original](https://github.com/etra0/ramos).
+* **[César Paulangelo (@BooterMan98)](https://github.com/BooterMan98)**, autor y mantenedor del proyecto base del que parte este fork: [malla-interactiva](https://github.com/BooterMan98/malla-interactiva).
+
+## Créditos de esta adaptación para Ingeniería Comercial UDP
+
+* **Crescente Basualto** — adaptación y configuración de este fork para las menciones de Administración y Economía de Ingeniería Comercial de la Universidad Diego Portales.
+* **ChatGPT (OpenAI)** — apoyo de inteligencia artificial para depurar errores de JavaScript, revisar la estructura de los datos, solucionar problemas de configuración y documentar los cambios. Se reconoce como asistencia técnica, no como autoría del proyecto.
+
+## Agradecimientos a colaboradores del proyecto base
+
+* [Pablo Aravena](https://github.com/litneet64), por su ayuda en la integración del proyecto con Labcomp y en el build workflow.
+* [Carlos Ponce](https://github.com/capgadsx), por su ayuda en la integración del proyecto con Labcomp.
+
+También se agradece a quienes han contribuido al proyecto base:
 <a href="https://github.com/csarman/malla-interactiva/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=csarman/malla-interactiva" />
+<img src="https://contrib.rocks/image?repo=csarman/malla-interactiva" alt="Contribuidores del proyecto base" />
 </a>
