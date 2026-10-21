@@ -13,6 +13,10 @@ const PRECACHE_URLS = [
     './views/header.html',
     './views/footer.html',
     './js/init.js',
+    './js/min1.js',
+    './js/min2.js',
+    './js/min3.js',
+    './js/min4.js',
     './js/malla.js',
     './js/customMalla.js',
     './js/ramo.js',
@@ -24,7 +28,11 @@ const PRECACHE_URLS = [
     './css/darkMode.css',
     './css/prettify.css',
     './css/styles.css',
-    './data/carreras.json'
+    './data/carreras.json',
+    './data/data_administracion.json',
+    './data/data_economia.json',
+    './data/colors_administracion.json',
+    './data/colors_economia.json'
 
 ];
 
