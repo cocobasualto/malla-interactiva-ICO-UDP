@@ -1,4 +1,10 @@
-{
-  "Ingeniería Comercial - Mención Administración": ["data_Administracion.json", "colors_ICO.json"],
-  "Ingeniería Comercial - Mención Economía": ["data_Economia.json", "colors_ICO.json"]
-}
+[
+  {
+    "Nombre": "Ingeniería Comercial - Mención Administración",
+    "Link": "administracion"
+  },
+  {
+    "Nombre": "Ingeniería Comercial - Mención Economía",
+    "Link": "economia"
+  }
+]
