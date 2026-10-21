@@ -6,7 +6,6 @@ const RUNTIME = 'runtime-v2';
 const PRECACHE_URLS = [
     './index.html',
     './',
-    './index.html',
     './prioridad/',
     './personalizar/',
     './personalizar/malla.html',
