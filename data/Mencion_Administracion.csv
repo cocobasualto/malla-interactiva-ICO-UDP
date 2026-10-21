@@ -1,0 +1,51 @@
+Nombre,Sigla,Creditos,Semestre,Categoria,Prerrequisito
+Matemáticas I,ICO09111,6,1,Métodos cuantitativos,
+Programación,ICO09112,6,1,Métodos cuantitativos,
+Fundamentos de administración y negocios I,ICO09113,6,1,Administración de empresas,
+Taller de comunicación I,ICO09114,6,1,Talleres,
+Inglés I,CIG1012,5,1,Inglés y CFG,
+Matemáticas II,ICO09121,6,2,Métodos cuantitativos,ICO09111
+Microeconomía I,ICO09122,6,2,Economía,
+Contabilidad I,ICO09123,6,2,Administración de empresas,
+Fundamentos de administración y negocios II,ICO09124,6,2,Administración de empresas,ICO09113
+Inglés II,CIG1013,5,2,Inglés y CFG,CIG1012
+Matemáticas III,ICO09211,6,3,Métodos cuantitativos,ICO09121
+Estadística I,ICO09212,6,3,Métodos cuantitativos,ICO09112-ICO09121
+Macroeconomía I,ICO09213,6,3,Economía,ICO09111-ICO09122
+Tecnología y Empresa,ICO09214,6,3,Administración de empresas,ICO09112
+Taller de comunicación II,ICO09215,3,3,Talleres,ICO09114
+Inglés III,CIG1014,5,3,Inglés y CFG,CIG1013
+Estadística II,ICO09221,6,4,Métodos cuantitativos,ICO09212
+Microeconomía II,ICO09222,6,4,Economía,ICO09121-ICO09122
+Contabilidad II,ICO09223,6,4,Administración de empresas,ICO09123-ICO09214
+Personas y equipos,ICO09224,6,4,Administración de empresas,ICO09124
+Taller de Liderazgo y trabajo en equipo,ICO09225,3,4,Talleres,ICO09215-ICO09124
+Inglés IV,ICO09226,5,4,Inglés y CFG,CIG1014
+Econometría I,ICO09311,6,5,Métodos cuantitativos,ICO09211-ICO09221
+Macroeconomía II,ICO09312,6,5,Economía,ICO09211-ICO09213
+Finanzas I,ICO09313,6,5,Administración de empresas,ICO09223-ICO09221
+Estrategia,ICO09314,6,5,Administración de empresas,ICO09224-ICO09214
+Taller de Ética en la toma de decisiones,ICO09315,3,5,Talleres,ICO09224-ICO09225
+Inglés V,ICO09316,5,5,Inglés y CFG,ICO09226
+Ciencia de Datos,ICO09321,6,6,Métodos cuantitativos,ICO09311-ICO09214
+Globalización y sustentabilidad,ICO09322,6,6,Economía,ICO09221-ICO09312-ICO09314
+Marketing,ICO09323,6,6,Administración de empresas,ICO09221-ICO09314
+Gestión de Operaciones,ICO09324,6,6,Administración de empresas,ICO09221-ICO09314
+CFG I,CFG1,5,6,Inglés y CFG,
+Ciencia de Datos para los Negocios,ICO09421,6,7,Métodos cuantitativos,ICO09321
+Fund. Económico de la Organización,ICO09411,6,7,Economía,ICO09322-ICO09222
+Finanzas II,ICO09412,6,7,Administración de empresas,ICO09313-ICO09321
+Recursos Humanos,ICO09413,6,7,Administración de empresas,ICO09224-ICO09314
+Taller de Emprendimiento,ICO09414,6,7,Talleres,ICO09323-ICO09315
+CFG II,CFG2,5,7,Inglés y CFG,
+Implementación estratégica,ICO09422,6,8,Administración de empresas,ICO09412-ICO09314-ICO09322
+Derecho para los Negocios,ICO09423,6,8,Administración de empresas,ICO09413
+Taller de Juego de Negocios,ICO029424,6,8,Talleres,ICO09414-ICO09313
+CFG III,CFG3,5,8,Inglés y CFG,
+Optativo mención I,ICO09OPT_AD1,6,9,Administración de empresas,
+Optativo mención II,ICO09OPT_AD2,6,9,Administración de empresas,
+Optativo mención III,ICO09OPT_AD3,6,9,Administración de empresas,
+Optativo mención IV,ICO09OPT_AD4,6,9,Administración de empresas,
+CFG IV,CFG4,5,9,Inglés y CFG,
+Práctica profesional,ICO09511,25,10,Administración de empresas,
+Desarrollo de carrera y E-portafolio,ICO09524,6,10,Talleres,
