@@ -1,0 +1,72 @@
+{
+  "s1": [
+    ["Matemáticas I", "ICO09111", 6, 6, "MET", [], "A"],
+    ["Programación", "ICO09112", 6, 6, "MET", [], "A"],
+    ["Fundamentos de administración y negocios I", "ICO09113", 6, 6, "ADM", [], "A"],
+    ["Taller de comunicación I", "ICO09114", 6, 6, "TAL", [], "A"],
+    ["Inglés I", "CIG1012", 5, 5, "ING", [], "A"]
+  ],
+  "s2": [
+    ["Matemáticas II", "ICO09121", 6, 6, "MET", ["ICO09111"], "A"],
+    ["Microeconomía I", "ICO09122", 6, 6, "ECO", [], "A"],
+    ["Contabilidad I", "ICO09123", 6, 6, "ADM", [], "A"],
+    ["Fundamentos de administración y negocios II", "ICO09124", 6, 6, "ADM", ["ICO09113"], "A"],
+    ["Inglés II", "CIG1013", 5, 5, "ING", ["CIG1012"], "A"]
+  ],
+  "s3": [
+    ["Matemáticas III", "ICO09211", 6, 6, "MET", ["ICO09121"], "A"],
+    ["Estadística I", "ICO09212", 6, 6, "MET", ["ICO09112", "ICO09121"], "A"],
+    ["Macroeconomía I", "ICO09213", 6, 6, "ECO", ["ICO09111", "ICO09122"], "A"],
+    ["Tecnología y Empresa", "ICO09214", 6, 6, "ADM", ["ICO09112"], "A"],
+    ["Taller de comunicación II", "ICO09215", 3, 3, "TAL", ["ICO09114"], "A"],
+    ["Inglés III", "CIG1014", 5, 5, "ING", ["CIG1013"], "A"]
+  ],
+  "s4": [
+    ["Estadística II", "ICO09221", 6, 6, "MET", ["ICO09212"], "A"],
+    ["Microeconomía II", "ICO09222", 6, 6, "ECO", ["ICO09121", "ICO09122"], "A"],
+    ["Contabilidad II", "ICO09223", 6, 6, "ADM", ["ICO09123", "ICO09214"], "A"],
+    ["Personas y equipos", "ICO09224", 6, 6, "ADM", ["ICO09124"], "A"],
+    ["Taller de Liderazgo y trabajo en equipo", "ICO09225", 3, 3, "TAL", ["ICO09215", "ICO09124"], "A"],
+    ["Inglés IV", "ICO09226", 5, 5, "ING", ["CIG1014"], "A"]
+  ],
+  "s5": [
+    ["Econometría I", "ICO09311", 6, 6, "MET", ["ICO09211", "ICO09221"], "A"],
+    ["Macroeconomía II", "ICO09312", 6, 6, "ECO", ["ICO09211", "ICO09213"], "A"],
+    ["Finanzas I", "ICO09313", 6, 6, "ADM", ["ICO09223", "ICO09221"], "A"],
+    ["Estrategia", "ICO09314", 6, 6, "ADM", ["ICO09224", "ICO09214"], "A"],
+    ["Taller de Ética en la toma de decisiones", "ICO09315", 3, 3, "TAL", ["ICO09224", "ICO09225"], "A"],
+    ["Inglés V", "ICO09316", 5, 5, "ING", ["ICO09226"], "A"]
+  ],
+  "s6": [
+    ["Ciencia de Datos", "ICO09321", 6, 6, "MET", ["ICO09311", "ICO09214"], "A"],
+    ["Globalización y sustentabilidad", "ICO09322", 6, 6, "ECO", ["ICO09221", "ICO09312", "ICO09314"], "A"],
+    ["Marketing", "ICO09323", 6, 6, "ADM", ["ICO09221", "ICO09314"], "A"],
+    ["Gestión de Operaciones", "ICO09324", 6, 6, "ADM", ["ICO09221", "ICO09314"], "A"],
+    ["CFG I", "CFG1", 5, 5, "ING", [], "A"]
+  ],
+  "s7": [
+    ["Ciencia de Datos para los Negocios", "ICO09421", 6, 6, "MET", ["ICO09321"], "A"],
+    ["Fund. Económico de la Organización", "ICO09411", 6, 6, "ECO", ["ICO09322", "ICO09222"], "A"],
+    ["Finanzas II", "ICO09412", 6, 6, "ADM", ["ICO09313", "ICO09321"], "A"],
+    ["Recursos Humanos", "ICO09413", 6, 6, "ADM", ["ICO09224", "ICO09314"], "A"],
+    ["Taller de Emprendimiento", "ICO09414", 6, 6, "TAL", ["ICO09323", "ICO09315"], "A"],
+    ["CFG II", "CFG2", 5, 5, "ING", [], "A"]
+  ],
+  "s8": [
+    ["Implementación estratégica", "ICO09422", 6, 6, "ADM", ["ICO09412", "ICO09314", "ICO09322"], "A"],
+    ["Derecho para los Negocios", "ICO09423", 6, 6, "ADM", ["ICO09413"], "A"],
+    ["Taller de Juego de Negocios", "ICO029424", 6, 6, "TAL", ["ICO09414", "ICO09313"], "A"],
+    ["CFG III", "CFG3", 5, 5, "ING", [], "A"]
+  ],
+  "s9": [
+    ["Optativo mención I", "ICO09OPT_AD1", 6, 6, "ADM", [], "A"],
+    ["Optativo mención II", "ICO09OPT_AD2", 6, 6, "ADM", [], "A"],
+    ["Optativo mención III", "ICO09OPT_AD3", 6, 6, "ADM", [], "A"],
+    ["Optativo mención IV", "ICO09OPT_AD4", 6, 6, "ADM", [], "A"],
+    ["CFG IV", "CFG4", 5, 5, "ING", [], "A"]
+  ],
+  "s10": [
+    ["Práctica profesional", "ICO09511", 25, 25, "ADM", [], "A"],
+    ["Desarrollo de carrera y E-portafolio", "ICO09524", 6, 6, "TAL", [], "A"]
+  ]
+}
